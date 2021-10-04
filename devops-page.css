@@ -1,0 +1,150 @@
+body {
+    background-color: lightgray;
+    text-align: center;
+    margin: 0;
+}
+
+a:unvisted {
+    color: mediumblue;
+}
+
+a:visited {
+    color: cadetblue
+}
+
+a:hover {
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+h2, h3 {
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+p, li {
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    list-style-position: inside;
+}
+
+img {
+    display: block;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul.nav {
+    #display: none;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    list-style-type: none;
+    padding: 0;
+    border: 0;
+    border-bottom: 0.25vw;
+    border-color: black;
+    border-style: outset;
+    overflow: hidden;
+    background-color: darkgray;
+    width: 100%;
+}
+
+a.nav {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+
+li.nav {
+    display: inline;
+    margin: 0;
+    padding: 1%;
+    float: left;
+    text-align: center;
+    width: 23%;
+    overflow: hidden;
+}
+
+li.nav:hover {
+    background-color: lightgray;
+}
+
+li#current {
+    background-color: lightgray;
+}
+
+p {
+    margin: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+    h1 {
+        font-size: 3vw;
+    }
+    h2 {
+        font-size: 3vw;
+    }
+    h3 {
+        font-size: 3vw;
+        margin-top: 5vw;
+        margin-bottom: 3vw;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img {
+        width: 50vw;
+    }
+    p, ul {
+        width: 90vw;
+        font-size: 1.55vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+    li {
+        font-size: 1.25vw;
+    }
+}
+
+@media only screen and (max-width: 999px) {
+    h1 {
+        font-size: 4vw;
+    }
+    h2 {
+        font-size: 5vw
+    }
+    h3 {
+        font-size: 4vw;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }   
+    img {
+        width: 85vw;
+    }
+    p, ul {
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 3.25vw;
+        padding: 0;
+    }
+    li.nav {
+        padding-top: 2%;
+        padding-bottom: 1.5%;
+    }
+    a.nav {
+        font-size: 3.5vw;
+    }
+    li {
+        font-size: 2.75vw;
+    }
+}
